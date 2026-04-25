@@ -124,6 +124,7 @@ function setCanvasSizeButton() {
 
       do {
         answer = prompt("Square pixels? (Y/N)");
+        console.log(answer);
         if (answer != null) answer = answer.toLowerCase();
       } while ((answer !== "y" && answer !== "n") || answer == null);
       
@@ -137,7 +138,7 @@ function setCanvasSizeButton() {
       }
       answer = "";
 
-      if (gridWidth != null && gridHeight != null) drawGrid(gridWidth, gridHeight, true, "black");
+      if ((gridWidth != null || gridWidth != undefined) && (gridHeight != null ||gridHeight != undefined)) drawGrid(gridWidth, gridHeight, true, "black");
     }
 
   } else {
