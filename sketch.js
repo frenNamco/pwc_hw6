@@ -128,7 +128,7 @@ function setCanvasSizeButton() {
       
       gridWidth = Number(prompt("How Many Pixels Wide?"));
       
-      if (answer === "n") {
+      if (answer === "N") {
         gridHeight = Number(prompt("How Many Pixels Tall?"));
         pixelSquare = false;
       } else {
