@@ -124,9 +124,7 @@ function setCanvasSizeButton() {
 
       do {
         answer = prompt("Square pixels? (Y/N)");
-        console.log(answer);
-        if (answer != null) answer = answer.toLowerCase();
-      } while ((answer !== "y" && answer !== "n") || answer == null);
+      } while ((answer != "Y" && answer != "N") || answer == null);
       
       gridWidth = Number(prompt("How Many Pixels Wide?"));
       
